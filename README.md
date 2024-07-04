@@ -22,3 +22,7 @@ Este es un proyecto de una calculadora simple desarrollada en HTML, CSS y JavaSc
 ## Link al repositorio 
 <a href="https://github.com/D3R5/CalculadoraSpringU2" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/564/564429.png" alt="repositorio calculadora" height="75" width="85" /></a>
 Puedes encontrar el repositorio [aquí](https://github.com/D3R5/CalculadoraSpringU2).
+
+## Imagen de la calculadora
+![image](https://github.com/D3R5/CalculadoraSpringU2/assets/117954097/c94a7e39-ac33-4c02-9598-fce53d63e451)
+
