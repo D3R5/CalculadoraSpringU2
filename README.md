@@ -1,3 +1,4 @@
+# Integrantes: Rodrigo Rojas – Victoria Sanhueza – Jorge Montoya – Joeshep López – Diego Rivera
 # Calculadora Simple
 Este es un proyecto de una calculadora simple desarrollada en HTML, CSS y JavaScript.
 
