@@ -22,6 +22,7 @@ Este es un proyecto de una calculadora simple desarrollada en HTML, CSS y JavaSc
 - CSS
 - Bootstrap
 - JavaScript
+- JQuery
 
 ## Uso
 1. Clona o descarga el repositorio.
