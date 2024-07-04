@@ -1,115 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Javascript - Responsiva</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/564/564429.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/calculadora.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora Responsiva</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <div class="container vh-100 d-flex align-items-center justify-content-between">
-    <div class="text-box bg-light p-4 rounded shadow">
-      <h2>Grupo 5 Bootcamp Java</h2>
-    </div>
-    <div class="calculator bg-light p-4 rounded shadow">
-      <div class="mb-3">
-        <input type="text" class="form-control" id="display" readonly />
+  <body>
+    <div
+      class="container vh-100 d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="text-box bg-light p-4 rounded shadow mb-3 text-center">
+        <h2>Grupo 5 Bootcamp Java</h2>
       </div>
-      <div class="row g-2">
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('7')">
-            7
-          </button>
+      <div class="calculator bg-light p-4 rounded shadow">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="display" readonly />
         </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('8')">
-            8
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('9')">
-            9
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-operation w-100" onclick="appendToDisplay('/')">
-            /
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('4')">
-            4
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('5')">
-            5
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('6')">
-            6
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-operation w-100" onclick="appendToDisplay('*')">
-            *
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('1')">
-            1
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('2')">
-            2
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('3')">
-            3
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-operation w-100" onclick="appendToDisplay('-')">
-            -
-          </button>
-        </div>
-        <div class="col-6">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('0')">
-            0
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-secondary w-100" onclick="appendToDisplay('.')">
-            .
-          </button>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-operation w-100" onclick="appendToDisplay('+')">
-            +
-          </button>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-success w-100" onclick="calculateResult()">
-            =
-          </button>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-danger w-100" onclick="clearDisplay()">
-            C
-          </button>
+        <div class="row g-2">
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('7')"
+            >
+              7
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('8')"
+            >
+              8
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('9')"
+            >
+              9
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-operation w-100"
+              onclick="appendToDisplay('/')"
+            >
+              /
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('4')"
+            >
+              4
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('5')"
+            >
+              5
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('6')"
+            >
+              6
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-operation w-100"
+              onclick="appendToDisplay('*')"
+            >
+              *
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('1')"
+            >
+              1
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('2')"
+            >
+              2
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('3')"
+            >
+              3
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-operation w-100"
+              onclick="appendToDisplay('-')"
+            >
+              -
+            </button>
+          </div>
+          <div class="col-6">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('0')"
+            >
+              0
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-secondary w-100"
+              onclick="appendToDisplay('.')"
+            >
+              .
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              class="btn btn-operation w-100"
+              onclick="appendToDisplay('+')"
+            >
+              +
+            </button>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-success w-100" onclick="calculateResult()">
+              =
+            </button>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-danger w-100" onclick="clearDisplay()">
+              C
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  <script src="js/calculadora.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/calculadora.js"></script>
+  </body>
 </html>

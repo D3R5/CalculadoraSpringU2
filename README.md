@@ -1,4 +1,5 @@
 # Integrantes: Rodrigo Rojas – Victoria Sanhueza – Jorge Montoya – Joeshep López – Diego Rivera
+
 # Calculadora Simple
 Este es un proyecto de una calculadora simple desarrollada en HTML, CSS y JavaScript.
 
@@ -6,6 +7,15 @@ Este es un proyecto de una calculadora simple desarrollada en HTML, CSS y JavaSc
 - Operaciones básicas: suma, resta, multiplicación y división.
 - Interfaz intuitiva y fácil de usar.
 - Responsiva, se adapta a diferentes tamaños de pantalla.
+- El archivo calculadora.js da la opcion de funcionar con JQuery o con Javascript puro. (se separo con un comentario el inicio de las funciones con JQuery y con Javascript, así que se ha de comentar y descomentar las que se quieran usar).
+- Se puede usar el teclado para ingresar números y operaciones matemáticas: 
+    - Tecla '+' para sumar
+    - Tecla '-' para restar
+    - Tecla '*' para multiplicar
+    - Tecla '/' para dividir
+    - Tecla '.' para crear o agregar decimales
+    - Tecla 'Enter' para dar el resultado
+    - Tecla 'Escape' o 'Delete' para limpiar la calculadora
 
 ## Tecnologías Utilizadas
 - HTML

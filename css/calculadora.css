@@ -1,26 +1,6 @@
-.calculator {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.calculator .form-control {
-    margin-bottom: 20px;
-    text-align: right;
-    font-size: 3rem;
-}
-
-.calculator button {
-    margin: 10px 0;
-    font-size: 2rem;
-    height: 100px;
-}
-
 /* Estilo personalizado para los botones de operación */
 .btn-operation {
     background-color: orange;
     border-color: orange;
 }
+
